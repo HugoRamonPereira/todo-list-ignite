@@ -11,18 +11,7 @@ export interface TasksProps {
 }
 
 function App() {
-  const [tasks, setTasks] = useState<TasksProps[]>([
-    {
-      id: '1',
-      text: 'hello',
-      isDone: false
-    },
-    {
-      id: '2',
-      text: 'hello',
-      isDone: false
-    }
-  ]);
+  const [tasks, setTasks] = useState<TasksProps[]>([]);
 
   function handleCreateTask(taskTitle: string) {
     setTasks([...tasks,
